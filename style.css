@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    padding: 0;
+    height: 100%;
+    margin: 0 2em;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    max-width: 20em;
+    padding: 2em 3em;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform: translateY(50%);
+}
+
+.card > img{
+    width: 1em;
+    padding: 1em;
+    background-color: hsl(213, 18%, 24%);
+    border-radius: 50%;
+
+}
+
+.card h1{
+    color: #fff;
+    font-family: 'Overpass', sans-serif;
+    margin-top: 1em;
+}
+
+.card p{
+    color: #fff;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.numbers{
+    display: flex;
+    flex-wrap: nowrap;
+    color: #fff;
+    gap: 1em;
+    font-family: 'Overpass', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    user-select: none;
+    
+}
+
+.number-one,
+.number-two,
+.number-three,
+.number-four,
+.number-five{
+    width: 1em;
+    height: 1em;
+    padding: 1em;
+    background-color: hsl(213, 18%, 24%);
+    border-radius: 50%;
+    text-align: center;
+}
+
+.number-one:hover,
+.number-two:hover,
+.number-three:hover,
+.number-four:hover,
+.number-five:hover{
+    background-color: hsl(25, 97%, 53%);
+    /* background-color: hsl(217, 12%, 63%); */
+    cursor: pointer;
+}
+
+.submit-btn{
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding: 1em 3em;
+    font-family: 'Overpass', sans-serif;
+    color: #fff;
+    margin: 2em 0 1em 0;
+    font-size: 16px;
+    user-select: none;
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 50%;
+}
+
+.submit-btn:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: #fff;
+    cursor: not-allowed;
+
+}
+
+
+.card-thank-you{
+    width: 20em;
+    height: max-content;
+    padding: 2em 3em;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto 2em;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+.card-thank-you > img{
+    width: 10em;
+    margin-top: 2em;
+    margin: auto;
+}
+
+.card-thank-you > h3{
+    font-family: 'Overpass', sans-serif;
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(213, 18%, 24%);
+    font-weight: 200;
+    font-size: 16px;
+    text-align: center;
+    padding: 0.5em 2em;
+    border-radius: 20px;
+    margin: 2em auto;
+}
+
+.card-thank-you > h1{
+    color: #fff;
+    font-family: 'Overpass', sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+.card-thank-you > p{
+    color: #fff;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 200;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    margin-top: 1em;
+}
+
+
+@media (max-width: 500px) {
+    .card{
+        max-width: 20em;
+        padding: 2em 1em;
+        background-color: hsl(213, 19%, 18%);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        transform: translateY(50%);
+    }
+
+    .card-thank-you{
+        width: 20em;
+        height: max-content;
+        padding: 2em 1em;
+        background-color: hsl(213, 19%, 18%);
+        border-radius: 20px;
+        display: none;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto 2em;
+        justify-content: center;
+        top: 50%;
+        transform: translateY(50%);
+    }
+
+
+}
